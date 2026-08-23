@@ -1,6 +1,4 @@
 numpy
-requests
 matplotlib
 pandas
-pyyaml
-pytest
+scikit-learn

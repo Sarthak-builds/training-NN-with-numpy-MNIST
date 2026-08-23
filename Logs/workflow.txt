@@ -1,0 +1,2 @@
+Create the repo and project structure with gitignore and requirements.
+create env: python -m env env, activate it and then install requirements as pip install -r requirements.txt

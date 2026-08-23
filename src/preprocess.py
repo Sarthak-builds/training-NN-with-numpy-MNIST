@@ -18,3 +18,6 @@ x_train_final, x_test_final, y_train_final, y_test_final = train_test_split(
 print(x_train_final.shape, y_train_final.shape)
 print(x_test_final.shape, y_test_final.shape)
 
+def one_hot(Y):
+     one_hot_Y = np.zeros((Y.size, Y.max()+1))
+     one_hot_Y[np.arang(Y.size), Y] = 1

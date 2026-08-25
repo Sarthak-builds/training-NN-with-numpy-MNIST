@@ -1,4 +1,4 @@
-from pytorch import torch
+import torch
 from matplotlib import pyplot as plt
 weights = 0.4
 bias = 0.01
@@ -19,4 +19,4 @@ def plot_predictions(train_data =  X_train, train_labels = y_train, test_data = 
     plt.legend(prop={"size":14})
 
 plot_predictions()
-    
+

@@ -1,4 +1,5 @@
 venv/
-data/*.gz
+data/
 __pycache__/
 *.pyc
+.kaggle/

@@ -47,3 +47,16 @@ plt.ylabel("Loss")
 plt.xlabel("Epochs")
 plt.legend();
 
+# 1. Set the model in evaluation mode
+model_0.eval()
+
+# 2. Setup the inference mode context manager
+with torch.inference_mode():
+  # 3. Make sure the calculations are done with the model and data on the same device
+  # in our case, we haven't setup device-agnostic code yet so our data and model are
+  # on the CPU by default.
+  # model_0.to(device)
+  # X_test = X_test.to(device)
+  y_preds = model_0(X_test)
+y_preds
+
